@@ -14,6 +14,7 @@ import { BrandsComponent }  from './brands.component'
 import { ProductWidgetAreaComponent }  from './product-widget-area.component'
 import { LandingPageComponent }  from './landing-page.component'
 import {ProductComponent} from "./product.component"
+import {ProductDetailComponent} from "./product-detail.component"
 
 import {appRoutes} from "./routes"
 
@@ -33,7 +34,8 @@ import {appRoutes} from "./routes"
       BrandsComponent,
       ProductWidgetAreaComponent,
       LandingPageComponent,
-      ProductComponent
+      ProductComponent,
+      ProductDetailComponent
   ],
   providers: [ ProductsService ],
   bootstrap:    [ AppComponent ]

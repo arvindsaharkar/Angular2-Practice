@@ -22,6 +22,7 @@ var brands_component_1 = require('./brands.component');
 var product_widget_area_component_1 = require('./product-widget-area.component');
 var landing_page_component_1 = require('./landing-page.component');
 var product_component_1 = require("./product.component");
+var product_detail_component_1 = require("./product-detail.component");
 var routes_1 = require("./routes");
 var AppModule = (function () {
     function AppModule() {
@@ -42,7 +43,8 @@ var AppModule = (function () {
                 brands_component_1.BrandsComponent,
                 product_widget_area_component_1.ProductWidgetAreaComponent,
                 landing_page_component_1.LandingPageComponent,
-                product_component_1.ProductComponent
+                product_component_1.ProductComponent,
+                product_detail_component_1.ProductDetailComponent
             ],
             providers: [products_service_1.ProductsService],
             bootstrap: [app_component_1.AppComponent]
