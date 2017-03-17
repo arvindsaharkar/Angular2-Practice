@@ -13,7 +13,9 @@ export class ProductsService {
     }
     
     getProductDetails(category:String, productId:Number){
-        return Products[0][category];
+        console.log(JSON.stringify(Products[0][category][(productId - 1)]));
+        //console.log("Category : "+category+" Product "+(productId - 1));
+        return Products[0][category][(productId - 1)];
     }
 }
 

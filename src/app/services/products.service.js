@@ -20,7 +20,9 @@ var ProductsService = (function () {
         return Products[0][category];
     };
     ProductsService.prototype.getProductDetails = function (category, productId) {
-        return Products[0][category];
+        console.log(JSON.stringify(Products[0][category][(productId - 1)]));
+        //console.log("Category : "+category+" Product "+(productId - 1));
+        return Products[0][category][(productId - 1)];
     };
     ProductsService = __decorate([
         core_1.Injectable(), 
